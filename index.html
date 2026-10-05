@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MindRush</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME SCREEN -->
+
+    <div id="homeScreen">
+
+        <h1>MINDRUSH</h1>
+
+        <p>THINK FAST • BEAT YOUR SCORE</p>
+
+        <button id="startButton">
+            START
+        </button>
+
+        <button id="settingsButton">
+            ⚙️ SETTINGS
+        </button>
+
+    </div>
+
+
+    <!-- SETTINGS SCREEN -->
+
+    <div id="settingsScreen">
+
+        <h1>⚙️ SETTINGS</h1>
+
+        <p>🌐 Language</p>
+
+        <button id="englishButton">
+            🇬🇧 English
+        </button>
+
+        <button id="hindiButton">
+            🇮🇳 हिन्दी
+        </button>
+
+        <button id="closeSettings">
+            ✕ CLOSE
+        </button>
+
+    </div>
+
+
+    <!-- GAME SCREEN -->
+
+    <div id="gameScreen" class="game-screen">
+
+        <div class="game-top">
+
+            <span id="category">
+                🧩 LOGIC
+            </span>
+
+            <span id="questionNumber">
+                1 / 15
+            </span>
+
+            <span id="timer">
+                ⏱️ 30
+            </span>
+
+        </div>
+
+
+        <div class="question-box">
+
+            <h2 id="question">
+                Question will appear here.
+            </h2>
+
+        </div>
+
+
+        <div class="answers">
+
+            <button class="answer">
+                Option A
+            </button>
+
+            <button class="answer">
+                Option B
+            </button>
+
+            <button class="answer">
+                Option C
+            </button>
+
+            <button class="answer">
+                Option D
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

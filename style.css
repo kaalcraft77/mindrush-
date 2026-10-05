@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(30deg, transparent 48%, #dce8f5 49%, transparent 51%) 0 0 / 60px 60px,
+        linear-gradient(150deg, transparent 48%, #dce8f5 49%, transparent 51%) 0 0 / 60px 60px,
+        #f8fbff;
+}
+
+
+    h1 {
+    margin: 0;
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: #ef75a9;
+    text-shadow: 3px 3px 0 #ffffff;
+    }
+
+p {
+    margin-top: 15px;
+
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    color: #75aee8;
+}
+
+button {
+    margin-top: 50px;
+
+    width: 80%;
+    max-width: 400px;
+
+    padding: 20px;
+
+    border: none;
+    border-radius: 22px;
+
+    background: white;
+
+    font-size: 28px;
+    font-weight: 900;
+
+    box-shadow: 0 7px 0 #b9c3cc;
+
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #b9c3cc;
+}.game-screen {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    padding: 25px;
+}
+
+.game-top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.question-box {
+    background: white;
+    border: 3px solid #111;
+    border-radius: 25px;
+    padding: 30px 20px;
+    min-height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 7px 7px 0 #111;
+}
+
+.question-box h2 {
+    font-size: 25px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.answer {
+    width: 100%;
+    margin-top: 0;
+    font-size: 18px;
+    padding: 18px;
+    box-shadow: 4px 4px 0 #111;
+}
+
+@media (max-width: 600px) {
+    .answers {
+        grid-template-columns: 1fr;
+    }
+
+    .question-box h2 {
+        font-size: 21px;
+    }
+}#resultChat {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.chat-bubble {
+    max-width: 85%;
+    padding: 18px 20px;
+
+    border-radius: 22px;
+
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.chat-bubble.bot {
+    align-self: flex-start;
+
+    background: white;
+
+    border: 3px solid #111;
+
+    box-shadow: 5px 5px 0 #111;
+}
+
+.chat-bubble.user {
+    align-self: flex-end;
+
+    background: #c8f1ff;
+
+    border: 2px solid #111;
+}
+
+#playAgainButton,
+#homeButton {
+    width: 100%;
+    max-width: 400px;
+
+    margin: 5px auto;
+
+    padding: 17px;
+
+    border-radius: 18px;
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#homeButton {
+    margin-top: 0;
+}
+#settingsScreen {
+    display: none;
+}
